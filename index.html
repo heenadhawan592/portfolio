@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heena Dhawan | Elite Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body { background: #020617; color: #e2e8f0; scroll-behavior: smooth; }
+
+    nav {
+      position: fixed; width: 100%; top: 0;
+      background: rgba(2,6,23,0.85); backdrop-filter: blur(12px);
+      display: flex; justify-content: space-between; padding: 15px 10%; z-index: 1000;
+    }
+
+    nav a { color: #38bdf8; text-decoration: none; margin-left: 20px; }
+
+    header {
+      height: 100vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+    }
+
+    header h1 { font-size: 3.5rem; animation: fadeUp 1s ease forwards; }
+    header p { color: #94a3b8; margin-top: 10px; animation: fadeUp 1.5s ease forwards; }
+
+    .btn {
+      margin-top: 20px; padding: 10px 20px;
+      background: #38bdf8; color: black; border-radius: 25px;
+      text-decoration: none; transition: 0.3s;
+    }
+
+    .btn:hover { transform: scale(1.05); }
+
+    section { padding: 80px 10%; }
+
+    h2 { font-size: 2rem; margin-bottom: 30px; border-left: 4px solid #38bdf8; padding-left: 10px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+
+    .card {
+      background: #0f172a; padding: 20px; border-radius: 20px;
+      transition: 0.4s; position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 60px rgba(56,189,248,0.35);
+    }
+
+    /* Phone Mockup */
+    .phone {
+      width: 220px; margin: auto; border-radius: 30px;
+      padding: 10px; background: #000; box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      transition: transform 0.5s;
+    }
+
+    .phone img {
+      width: 100%; border-radius: 20px;
+    }
+
+    .card:hover .phone { transform: scale(1.05) rotateY(5deg); }
+
+    /* Fade animation */
+    .fade {
+      opacity: 0; transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .fade.show {
+      opacity: 1; transform: translateY(0);
+    }
+
+    footer { text-align: center; padding: 20px; color: #64748b; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <h3>Heena</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Heena Dhawan</h1>
+  <p>Senior Flutter Developer | AI Integration Engineer</p>
+  <a href="#projects" class="btn">View Projects</a>
+  <a href="hina_dhawan.pdf" class="btn" style="background:#22c55e; margin-left:10px;">Download Resume</a>
+</header>
+
+<section id="about" class="fade">
+  <h2>About Me</h2>
+ <p>
+    Senior Flutter Developer with 5+ years of experience designing and delivering high-performance, scalable mobile applications for Android and iOS.
+    I specialize in building production-ready apps using Flutter, Dart, and Firebase, with a strong focus on clean architecture (MVVM/Bloc), performance optimization, and seamless user experience.
+  </p>
+
+  <p style="margin-top:15px;">
+    I have hands-on experience integrating AI-powered features such as chatbots, recommendation systems, and smart search using OpenAI APIs.
+    My work focuses on combining modern mobile engineering with intelligent systems to build impactful, user-centric applications.
+  </p>
+
+  <p style="margin-top:15px;">
+    Over the years, I’ve collaborated with cross-functional teams in Agile environments, delivered secure production deployments, and continuously improved app performance and reliability.
+  </p>
+
+  <p style="margin-top:15px; color:#38bdf8;">
+    🔹 Flutter | Dart | Firebase | REST APIs | OpenAI | AI Integration | CI/CD
+  </p>
+</section>
+
+
+<section id="projects">
+  <h2>App Showcase</h2>
+  <div class="grid">
+
+
+
+    <!-- Marketplace App -->
+    <div class="card fade">
+      <div class="phone">
+        <img src="images/market1.png" alt="Marketplace App">
+      </div>
+      <h3>Marketplace App</h3>
+      <p><strong>Problem:</strong> Users struggled to find relevant products quickly.</p>
+      <p><strong>Solution:</strong> Implemented smart recommendation engine and advanced search system.</p>
+      <p><strong>Impact:</strong> Increased user engagement and improved product discovery experience.</p>
+      <p style="color:#38bdf8; font-size:0.9rem;">Flutter • REST APIs • Recommendation System</p>
+    </div>
+
+ <!-- AI Assistant App -->
+    <div class="card fade">
+      <div class="phone">
+        <img src="images/ai1.png" alt="AI App">
+      </div>
+      <h3>AI Assistant App</h3>
+      <p><strong>Problem:</strong> Users needed instant support and intelligent responses inside the app.</p>
+      <p><strong>Solution:</strong> Built a real-time chatbot using OpenAI API with secure token handling and conversational UI.</p>
+      <p><strong>Impact:</strong> Improved user engagement and reduced manual support dependency.</p>
+      <p style="color:#38bdf8; font-size:0.9rem;">Flutter • OpenAI API • Firebase</p>
+    </div>
+  <!-- Labour Bureau -->
+    <div class="card fade">
+      <div class="phone">
+        <img src="images/labour1.png" alt="Labour App">
+      </div>
+      <h3>Labour Bureau System</h3>
+      <p><strong>Problem:</strong> Data collection required reliable offline functionality.</p>
+      <p><strong>Solution:</strong> Developed offline-first architecture with sync and structured reporting.</p>
+      <p><strong>Impact:</strong> Enabled uninterrupted usage and accurate data processing.</p>
+      <p style="color:#38bdf8; font-size:0.9rem;">Flutter • Offline Sync • Data Pipelines</p>
+    </div>
+
+    <!-- Performance Optimization -->
+    <div class="card fade">
+      <div class="phone">
+        <img src="images/performance.png" alt="Performance">
+      </div>
+      <h3>Performance Optimization</h3>
+      <p><strong>Problem:</strong> App performance issues and slow response times.</p>
+      <p><strong>Solution:</strong> Optimized state management and API handling using Bloc pattern.</p>
+      <p><strong>Impact:</strong> Reduced load time and improved responsiveness significantly.</p>
+      <p style="color:#38bdf8; font-size:0.9rem;">Bloc • Performance Tuning • API Optimization</p>
+    </div>
+
+    <!-- CI/CD -->
+    <div class="card fade">
+      <div class="phone">
+        <img src="images/deployment.png" alt="CI/CD">
+      </div>
+      <h3>CI/CD & Deployment</h3>
+      <p><strong>Problem:</strong> Manual deployment caused delays and inconsistencies.</p>
+      <p><strong>Solution:</strong> Automated build and release pipelines using CI/CD tools.</p>
+      <p><strong>Impact:</strong> Faster, more reliable deployments with reduced human errors.</p>
+      <p style="color:#38bdf8; font-size:0.9rem;">CI/CD • Git • Automation</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="hire" class="fade">
+  <h2>Hire Me</h2>
+  <p style="max-width:700px; margin-bottom:20px;">
+    I’m currently open to Senior Flutter Developer roles and opportunities involving AI-powered mobile applications.
+    If you're looking for someone who can build scalable, high-performance apps with real-world impact, let’s connect.
+  </p>
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p>Email: heenadhawan06@gmail.com</p>
+  <p>Phone: +91 9205863645</p>
+  <p>LinkedIn: <a href="www.linkedin.com/in/heena-d-64993497" style="color:#38bdf8;">linkedin.com/in/heenadhawan</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Heena Dhawan</p>
+</footer>
+
+<script>
+  const faders = document.querySelectorAll('.fade');
+
+  const appearOptions = {
+    threshold: 0.2
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+</body>
+</html>
